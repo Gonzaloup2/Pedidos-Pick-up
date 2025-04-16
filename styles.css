@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #007bff;
+  color: white;
+}
+
+header {
+  background: #0056b3;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu a:hover {
+  background: #f0f0f0;
+}
+
+.menu a i {
+  margin-right: 10px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-container,
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+button {
+  background: #ffc107;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e0a800;
+}
+
+.pedido {
+  background: white;
+  color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid #003f88;
+  border-radius: 8px;
+}
+
+.pedido button {
+  margin-top: 10px;
+  margin-right: 5px;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.pedido .editar {
+  background: #28a745;
+  color: white;
+  border: none;
+}
+
+.pedido .eliminar {
+  background: #dc3545;
+  color: white;
+  border: none;
+}
+
+.boton-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ffc107;
+  color: black;
+  font-size: 16px;
+  border-radius: 50px;
+   width: 50px;
+  height: 50px;
+  padding: 12px 18px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.boton-flotante:hover {
+  background: #e0a800;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 16px;
+  }
+
+  .pedido {
+    font-size: 14px;
+  }
+}
